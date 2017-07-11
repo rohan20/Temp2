@@ -23,13 +23,29 @@
         android:layout_below="@id/word_edit_text"
         android:text="Submit"/>
 
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word_edit_text"
+        android:layout_toEndOf="@id/submit_button"
+        android:text="Clear"/>
+
+    <Button
+        android:id="@+id/add_letter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word_edit_text"
+        android:layout_toEndOf="@id/clear_button"
+        android:text="Add Letter"/>
+
     <LinearLayout
-        android:orientation="horizontal"
-        android:padding="10dp"
         android:id="@+id/text_views_linear_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/submit_button"
-        android:background="@android:color/holo_green_light"/>
+        android:background="@android:color/holo_green_light"
+        android:orientation="horizontal"
+        android:padding="10dp"/>
 
 </RelativeLayout>
